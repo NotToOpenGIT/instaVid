@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sourin</title>
+    <style>
+        body{
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #ffaacc;
+        }
+        h1{
+            color: royalblue;
+        }
+        .con{
+            border: 5px dotted black;
+            width: 300px;
+            height: 300px;
+            background-color: #fff;
+            margin: 50px auto;
+        }
+        #element{
+            width: 290px;
+            height: 290px;
+            background-color: #f56c6a;
+            margin: 5px auto;
+            transition-property: all;
+            transition: 5s;
+            perspective-origin: 50% 50%;
+            border: 5px dashed red;
+
+        }
+        input{
+            width: 60px;
+        }
+        label,input{
+            font-family:  'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            font-weight: bold;
+        }
+        @media screen and (max-width:843px) {
+            .con{
+            border: 3px dotted black;
+            width: 150px;
+            height: 150px;
+            background-color: #fffcce;
+            margin: 40px auto; 
+        }
+        #element{
+            width: 150px;
+            height: 150px;
+            background-color: #f56c0a;
+            border: 2px double blue;
+        }
+        h1{
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+        div span{
+            display: block;
+            text-align: justify;
+            padding: 5px 20px;
+        }
+        }
+        @media screen and (max-width:259px) {
+            div span label{
+                font-size: large;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bolder;
+            }
+        }
+        @media screen and (min-width:264px) {
+            div span {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>how a 3D rotate works</h1>
+    <div class="con">
+        <div id="element">sourin</div>
+    </div>
+    <div>
+        <span>
+            <label for="perspective">perspective: </label>
+            <input type="number" value="300" name="perspective" id="perspective">
+        </span>
+
+        <span>
+            <label for="X">X-INDEX: </label>
+            <input type="number" value="20" name="X" id="X">
+        </span>
+
+        <span>
+            <label for="X">Y-INDEX: </label>
+            <input type="number" value="0" name="Y" id="Y">
+        </span>
+
+        <span>
+            <label for="X">Z-INDEX: </label>
+            <input type="number" value="0" name="Z" id="Z">
+        </span>
+
+        <span>
+            <label for="deg">DEGREE:</label>
+            <input type="number" value="40" name="deg" id="deg">
+        </span>
+
+        <input type="button" value="OK">
+    </div>
+</body>
+<script src="sourin.js"></script>
+</html>
