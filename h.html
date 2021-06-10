@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            width: 100%;
+            text-transform: capitalize;
+            color: green;
+            font-size: 15vw;
+            font-family: 'Frankln Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 14px -8px 4px limegreen;
+            cursor:auto;
+            animation: show 2s 1 ;
+        }
+        @keyframes show {
+            0%{
+                transform: scale(0)rotate(0deg);
+                color: red;
+                text-shadow: 14px -8px 4px yellow;
+            }
+            100%{
+                transform: scale(1)rotate(360deg);
+                color: limegreen;
+                text-shadow: 14px -8px 4px green;
+            }
+        }
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(359deg);
+            }
+        }
+        @keyframes zoom{
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        @keyframes opac{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @keyframes fading{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        @keyframes ani-top{
+            0%{
+                top:-300px;
+                opacity: 0;
+            }
+            100%{
+                top:0px;
+                opacity: 1;
+            }
+        }
+        @keyframes ani-bottom{
+            0%{
+                bottom:-300px;
+                opacity: 0;
+            }
+            100%{
+                bottom:0px;
+                opacity: 1;
+            }
+        }
+        @keyframes ani-right{
+            0%{
+                right:-300px;
+                opacity: 0;
+            }
+            100%{
+                right:0px;
+                opacity: 1;
+            }
+        }
+        @keyframes ani-left{
+            0%{
+                left:-300px;
+                opacity: 0;
+            }
+            100%{
+                left:0px;
+                opacity: 1;
+            }
+        }
+
+        h1:hover{
+            text-shadow: none;
+            color:lime;
+            cursor: pointer;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border: 1px solid slateblue;
+            cursor: pointer;
+            animation: opac 4s 1;
+        }
+
+        p {
+            position: relative;
+            animation: fading 5s 1;
+            text-align: justify;
+            padding: 20px;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: blueviolet;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        b { 
+            color: red;
+        }
+        b:hover{
+            background-color: red;
+            color: #fff;
+            cursor: pointer;
+        }
+        div a {
+            text-decoration: none;
+            font-size: large;
+            text-transform: capitalize;
+            font-family: sans-serif;
+            font-weight: 300;
+            display: inline-block;
+        }
+        div a img{
+            border: none;
+            width: min-content;
+            height: min-content;
+        }
+        u{
+            text-decoration: none;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>sourin Bhowmick</h1>
+    <img src="sourin.jpg" alt="">
+    <p><u>Hi</u> MY Name is <b>sourin bhowmick</b>.
+        i am <b>17</b> years old and.
+        i live in <b> baidyabati hooghly-712222</b>.
+    </p>
+    <h4>place follow me on </h4>
+    <div>
+        <a href="//instagram.com/sourin bhowmick">
+            <img src="instagram.png"  alt="instagram">
+        </a>
+        <a href="//facebook.com/sourin bhowmick">
+            <img src="facebook.png" alt="facebook">
+        </a>
+    </div>
+
+</body>
+
+</html>
