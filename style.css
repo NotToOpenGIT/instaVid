@@ -54,10 +54,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: b-change 8s infinite;
+    animation: bchange 2s infinite;
 }
 
-@keyframes b-change {
+@keyframes bchange {
     0% {
         background-image: url('https://source.unsplash.com/random/1600x900');
     }
