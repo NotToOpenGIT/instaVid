@@ -23,7 +23,9 @@
 
 </body>
 <Script>
-    let a=`<img src='https://source.unsplash.com/random/300x200?sig=${Math.floor(Math.random()*20)}'>`
-    document.body.innerHTML=a;
+    setInterval(function (){
+                    let a=`<img src='https://source.unsplash.com/random/300x200'>`;
+                    document.body.innerHTML=a;}
+                ,1000);
 </Script>
 </html>
